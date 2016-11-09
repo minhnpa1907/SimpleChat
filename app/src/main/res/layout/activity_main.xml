@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.google.firebase.codelab.friendlychat.mvvm.ui.chat.ChatViewModel" />
+
+        <variable
+            name="view"
+            type="com.google.firebase.codelab.friendlychat.mvvm.ui.chat.ChatActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="horizontal"
+        tools:context=".mvvm.ui.MainActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/sendButton"
+            android:layout_toStartOf="@+id/sendButton">
+
+            <EditText
+                android:id="@+id/msg_EditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/msg_bubble_input"
+                android:hint="@string/edit_text_hint"
+                android:paddingBottom="16dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="14dp"
+                android:paddingTop="16dp"
+                android:text="@={viewModel.msg}"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/messageRecyclerView"
+            android:background="@drawable/ic_send"
+            android:clickable="true"
+            android:onClick="@{()-> viewModel.onSendMessageClick()}" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</layout>

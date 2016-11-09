@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="app_name">Simple Chat</string>
+    <string name="welcome_msg">Welcome!</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="about_me">About Me</string>
+    <string name="contacts_permission_rationale">Access to account information is required to sign in.</string>
+    <string name="invite_menu_label">Invite Friend</string>
+    <string name="invitation_message">Please joine me for a friendly chat</string>
+    <string name="invitation_cta">Call to action</string>
+    <string name="invitation_title">Simple Chat Invite</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="facebook_app_id">1602110796767839</string>
+    <string name="phone_num_link"><a href="tel:01286252840">01286252840</a></string>
+    <string name="gmail_link"><a href="mailto:minhnpa1907@gmail.com">minhnpa1907@gmail.com</a></string>
+    <string name="google_plus_link"><a href="https://plus.google.com/113466095852198098072">MINH NGUYEN</a></string>
+    <string name="facebook_link"><a href="https://www.facebook.com/minhnpa1907">Nguyễn Phạm Anh Minh</a></string>
+    <string name="gmail">Gmail</string>
+    <string name="phone_num">Phone Number</string>
+    <string name="google_plus">Google+</string>
+    <string name="facebook">Facebook</string>
+    <string name="my_full_name">NGUYỄN PHẠM ANH MINH</string>
+    <string name="birth_info">Born on July 19, 1995</string>
+    <string name="work_info">Studies at Banking University of Ho Chi Minh City</string>
+    <string name="profile_pic">profile_pic</string>
+    <string name="contact_me">Contact Me</string>
+    <string name="dialer_pic">dialer_pic</string>
+    <string name="gmail_pic">gmail_pic</string>
+    <string name="google_pic">google+_pic</string>
+    <string name="facebook_pic">facebook_pic</string>
+    <string name="powered_by_firebase">powered by Firebase</string>
+    <string name="about_me_click"><u>About Me</u></string>
+    <string name="edit_text_hint">Send message</string>
+
+</resources>
